@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#64878f"
+        android:layout_gravity="center">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="목록"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/imgf"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/lv1"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:background="#FFFFFF"
+            android:padding="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:id="@+id/textView_result" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnWrite"
+            android:background="#64878f"
+            android:textColor="#ffffff"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="작성" />
+
+        <Button
+            android:id="@+id/btnHome"
+            android:background="#64878f"
+            android:textColor="#ffffff"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="홈" />
+
+        <Button
+            android:id="@+id/btnTime"
+            android:background="#64878f"
+            android:textColor="#ffffff"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="타이머" />
+
+    </LinearLayout>
+
+</LinearLayout>
